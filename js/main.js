@@ -5,22 +5,14 @@
         'use strict';
 
         var examples = {
-            factory: factory,
-            pubsub: pubsub,
-            strategy: strategy,
-            observer: observer,
-            cor: cor,
-            mediator: mediator,
-            iterator: iterator,
-            facade: facade,
-            decorator: decorator,
-            adapter: adapter,
-            composite: composite,
-            proxy: proxy
+            factory: factory
+
         };
 
         window.runExample = function (example) {
             examples[example].init();
         };
+
+        window.runExample("factory");
     }
 );
